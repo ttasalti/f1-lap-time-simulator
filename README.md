@@ -8,7 +8,7 @@ The goal was to simulate Formula 1 races from practice and qualifying pace, as a
 
 ![Simulated 2021 Bahrain Grand Prix](docs/bahrain_2021_positions.png)
 
-*One run of the simulator for the 2021 Bahrain Grand Prix. Each line is a driver's position after every lap; crosses mark retirements.*
+*One run of the simulator for the 2021 Bahrain Grand Prix. Each line is a driver, from the real starting grid to the finish; X marks a retirement.*
 
 ## Data collection
 
