@@ -4,11 +4,11 @@ My undergraduate thesis project (B.E. Computer Engineering, Ankara University, 2
 
 All code in this repository was written by hand in 2021–2022, without any AI tools, and is published as it was written. The only change is that one unused, commented-out block in `dataFrame.py` from a later experiment was removed. This README and the figure in `docs/` were added later.
 
-The goal was to simulate Formula 1 races from practice and qualifying pace, as a basis for comparing pit strategies. The project has two parts: collecting clean data from messy public sources, and a lap-by-lap race simulator built on that data.
+The goal was to simulate Formula 1 races from practice and qualifying pace, as a basis for comparing pit strategies. The model is my attempt to reproduce the race simulator described by f1metrics in [Building a race simulator](https://f1metrics.wordpress.com/2014/10/03/building-a-race-simulator/) (2014), rebuilt from scratch with data from the 2021 season. The project has two parts: collecting clean data from messy public sources, and a lap-by-lap race simulator built on that data.
 
 ![Simulated 2021 Bahrain Grand Prix](docs/bahrain_2021_positions.png)
 
-*One run of the simulator for the 2021 Bahrain Grand Prix. Each line is a driver, from the real starting grid to the finish; X marks a retirement.*
+*One run of the simulator for the 2021 Bahrain Grand Prix, drawn from the simulator's lap-by-lap positions.*
 
 ## Data collection
 
@@ -33,7 +33,7 @@ The simulator (`raceSimulate.py`) runs a full race lap by lap for 20 drivers:
 - **Overtaking and DRS.** A car within one second of the car ahead gets a DRS bonus. A car that catches the car ahead but is not fast enough to pass stays behind it.
 - **Safety car.** A retirement brings out a safety car for a few laps, which slows the field and closes the gaps.
 
-The theoretical background (driver parameters, tyre and fuel model, pit strategy) is described in the thesis report in `report/` (Turkish).
+The driver parameters and simulator components follow the f1metrics post above. The theoretical background (driver parameters, tyre and fuel model, pit strategy) is described in the thesis report in `report/` (Turkish).
 
 ## Example output
 
